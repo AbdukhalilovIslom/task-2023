@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  font-family: -apple-system, BlinkMacSystemFont, system-ui,
+    "SF Compact Display", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: rgb(18, 18, 18);
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+svg {
+  fill: #fff;
+  stroke: #fff;
+  width: 24px;
+
+  &:hover {
+    fill: rgba(255, 255, 255, 0.8);
+    stroke: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-inline: 100px;
+  @media screen and (max-width: 1439px) {
+    padding-inline: 50px;
+  }
+  @media screen and (max-width: 767px) {
+    padding-inline: 10px;
+  }
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: red;
+}
+
+button {
+  border: 1px solid rgb(30, 30, 30);
+  background-color: transparent;
+  padding: 7px 15px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(30, 30, 30);
+  }
+}

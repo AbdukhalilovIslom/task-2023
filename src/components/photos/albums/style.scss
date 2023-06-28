@@ -1,0 +1,73 @@
+.albums {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 20px;
+
+  @media screen and (max-width: 1439px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 767px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .album {
+    position: relative;
+    padding: 10px;
+    padding-top: 22px;
+    border-radius: 15px;
+    border: 1px solid rgb(30, 30, 30);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .albums__icons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    a {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      label {
+        font-size: 14px;
+        color: #ffffffaa;
+        font-weight: normal;
+      }
+    }
+    p {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      label {
+        font-size: 14px;
+        color: #ffffffaa;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.edit__album {
+  background-color: black;
+  padding: 10px;
+  border: 1px solid rgb(30, 30, 30);
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  h4 {
+  }
+  textarea {
+    background-color: transparent;
+    color: #fff;
+  }
+  .album__edit__bts {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+  }
+}

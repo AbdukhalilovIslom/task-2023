@@ -1,0 +1,11 @@
+.posts {
+  .posts__edit {
+    display: flex;
+    justify-content: space-between;
+    .posts__selected {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
